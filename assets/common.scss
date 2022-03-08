@@ -1,0 +1,50 @@
+.img_frame {
+    .v-image{
+        border: 3px solid #009688;
+    }
+}
+.v-list-item{
+    &:active{
+        background-color: #00968733 ;
+    }
+    &--active{
+        .v-list-item__icon{
+            color: #009688 !important;
+        }
+        .v-list-item__content{
+            color: #009688 !important;
+        }
+    }
+}
+
+.v-dialog {
+    max-width: 476px !important;
+    // height: 90%;
+}
+.v-application {
+    ul {
+        padding: 0;
+    }
+    li {
+        list-style: none;
+    }
+    p {
+        margin: 0;
+    }
+    .v-btn:before {
+        content: none;
+    }
+}
+.v-card{
+    overflow: hidden;
+}
+.v-card__title {
+    background-color: #009688;
+    color: white;
+}
+.error_message {
+    color: #ff5252;
+    font-size: 12px;
+    margin-top: -27px;
+    margin-left: 12px;
+}
