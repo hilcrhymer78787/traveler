@@ -1,6 +1,6 @@
 .img_frame {
     .v-image{
-        border: 3px solid #009688;
+        border: 3px solid #1976d2;
     }
 }
 .v-list-item{
@@ -9,10 +9,10 @@
     }
     &--active{
         .v-list-item__icon{
-            color: #009688 !important;
+            color: #1976d2 !important;
         }
         .v-list-item__content{
-            color: #009688 !important;
+            color: #1976d2 !important;
         }
     }
 }
@@ -39,7 +39,7 @@
     overflow: hidden;
 }
 .v-card__title {
-    background-color: #009688;
+    background-color: #1976d2;
     color: white;
 }
 .error_message {

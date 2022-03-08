@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-app app>
-            <v-app-bar app absolute>
+            <v-app-bar app fixed>
                 <h1 class="ttl">Let's go to travel</h1>
             </v-app-bar>
 
@@ -11,14 +11,14 @@
                 </v-container>
             </v-main>
 
-            <v-bottom-navigation app light fixed color="teal">
-                <v-btn v-for="(nav,i) in navs" :key="i" :style="`width:calc(100% / 3); height:100%;background-color:white;`" :to="nav.to" router light>
+            <v-bottom-navigation app light fixed color="primary">
+                <v-btn v-for="(nav,i) in navs" :key="i" :style="`width:calc(100% / 2); height:100%;background-color:white;`" :to="nav.to" router light>
                     <span>{{ nav.ttl }}</span>
                     <v-icon>{{ nav.icon }}</v-icon>
                 </v-btn>
             </v-bottom-navigation>
 
-            <v-btn v-if="scrollY > 300" @click="scrollTop" color="teal" style="bottom:70px;" fixed right fab dark>
+            <v-btn v-if="scrollY > 300" @click="scrollTop" color="primary" style="bottom:70px;" fixed right fab dark>
                 <v-icon dark>mdi-arrow-up</v-icon>
             </v-btn>
         </v-app>
@@ -66,7 +66,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 h1 {
-    color: teal;
+    color: #1976d2;
     font-size: 20px;
 }
 </style>

@@ -2,13 +2,13 @@
     <div>
         <div class="d-flex py-3">
             <v-spacer></v-spacer>
-            <v-text-field v-model="keyword" class="rounded-pill" @keydown.enter="searchItemsEnter()" @click:prepend-inner="searchItems()" placeholder="検索" prepend-inner-icon="mdi-magnify" background-color="white" color="teal" outlined dense light clearable hide-details style="width:200px;"></v-text-field>
+            <v-text-field v-model="keyword" class="rounded-pill" @keydown.enter="searchItemsEnter()" @click:prepend-inner="searchItems()" placeholder="検索" prepend-inner-icon="mdi-magnify" background-color="white" color="primary" outlined dense light clearable hide-details style="width:200px;"></v-text-field>
             <v-spacer></v-spacer>
         </div>
         <div v-if="hotelData">
-            <v-pagination class="py-3" color="teal" v-model="hotelData.pagingInfo.page" @input="onClickPagination" :length="hotelData.pagingInfo.pageCount"></v-pagination>
+            <v-pagination class="py-3" color="primary" v-model="hotelData.pagingInfo.page" @input="onClickPagination" :length="hotelData.pagingInfo.pageCount"></v-pagination>
             <HotelDialog class="mb-5" v-for="(hotelinfo,index) in hotelData.hotels" :key="index" :isShowBtn="false" @onCloseMyself="isShowHotelDialog = false" :basicInfo="hotelinfo.hotel[0].hotelBasicInfo" :ratingInfo="hotelinfo.hotel[0].hotelRatingInfo" />
-            <v-pagination class="py-3" color="teal" v-model="hotelData.pagingInfo.page" @input="onClickPagination" :length="hotelData.pagingInfo.pageCount"></v-pagination>
+            <v-pagination class="py-3" color="primary" v-model="hotelData.pagingInfo.page" @input="onClickPagination" :length="hotelData.pagingInfo.pageCount"></v-pagination>
         </div>
         <div v-if="hotelErrorData" class="text-center py-5">
             <span class="error_txt">{{errorTxt}}</span>
