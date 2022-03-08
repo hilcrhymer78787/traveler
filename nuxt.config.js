@@ -88,5 +88,9 @@ export default {
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
-    }
+    },
+    generate: {
+        // dir: '../../../enman.magicgifted.com'
+        dir: '../traveler.magicgifted.com',
+    },
 }
