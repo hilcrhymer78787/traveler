@@ -74,8 +74,8 @@ export default {
     // PWA module configuration: https://go.nuxtjs.dev/pwa
     pwa: {
         meta: {
-            theme_color: 'white',
-            appleStatusBarStyle: 'black',
+            theme_color: 'black',
+            appleStatusBarStyle: 'white',
         },
         manifest: {
             name: 'enman',
