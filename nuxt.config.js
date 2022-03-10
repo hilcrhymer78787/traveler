@@ -74,9 +74,18 @@ export default {
 
     // PWA module configuration: https://go.nuxtjs.dev/pwa
     pwa: {
+        meta: {
+            theme_color: 'white',
+            appleStatusBarStyle: 'black',
+        },
         manifest: {
-            lang: 'ja'
-        }
+            name: 'enman',
+            lang: 'ja',
+            short_name: 'enman',
+            title: 'enman',
+            background_color: '#00ccaf',
+            color: 'white',
+        },
     },
 
     // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
