@@ -82,7 +82,7 @@ export default {
             lang: 'ja',
             short_name: 'enman',
             title: 'enman',
-            background_color: '#00ccaf',
+            background_color: 'white',
             color: 'white',
         },
     },
