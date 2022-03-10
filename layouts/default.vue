@@ -69,4 +69,7 @@ h1 {
     color: #1976d2;
     font-size: 20px;
 }
+.v-bottom-navigation{
+    padding: calc(env(safe-area-inset-bottom)) 0 calc(env(safe-area-inset-bottom) * 1.5);
+}
 </style>
