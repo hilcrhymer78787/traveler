@@ -74,18 +74,9 @@ export default {
 
     // PWA module configuration: https://go.nuxtjs.dev/pwa
     pwa: {
-        meta: {
-            theme_color: 'white',
-            appleStatusBarStyle: 'black',
-        },
         manifest: {
-            name: 'travel',
-            lang: 'ja',
-            short_name: 'travel',
-            title: 'travel',
-            background_color: '#00ccaf',
-            color: 'white',
-        },
+            lang: 'ja'
+        }
     },
 
     // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
